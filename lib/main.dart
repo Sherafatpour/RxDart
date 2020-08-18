@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rxdart_bloc/todo_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
 
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Scaffold(),
+      home: Scaffold(appBar : AppBar(backgroundColor: Colors.red,title: Text("RxDart"),),body: TodoHome(),),
     );
   }
 }
